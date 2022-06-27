@@ -198,28 +198,17 @@ body._lock{
     width: 100%;
     height: auto;
 }
-
-.header__menu{
-
-} 
-.menu{
-
-} 
+ 
 .menu__icon{
     display: none;
 
 } 
-.menu__body{
 
-}
-
-.menu__list{
-
-}
 .menu__list > li{
     position: relative;
     margin: 0px 0px 0px 20px;
 } 
+
 .menu__link{
     color: var(--black);
     font-size: 14px;
@@ -227,9 +216,11 @@ body._lock{
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
 .menu__link:hover{
     text-decoration: underline;
 } 
+
 .menu__sub-list{
     position: absolute;
     top: 100%;
@@ -238,18 +229,23 @@ body._lock{
     padding: 15px;
     min-width: 200px;
 } 
+
 .menu__sub-list li{
     margin: 0px 0px 10px 0px;
 }
+
 .menu__sub-list li:last-child{
     margin: 0px;
 }
+
 .menu__sub-link{
     color: var(--blue);
 }
+
 .menu__sub-link:hover{
     text-decoration: underline;
 }
+
 .menu__arrow{
     display: none;
 }
@@ -268,18 +264,25 @@ body._lock{
     font-family: "fontawesome" !important;
 }
 
+
+.header__socials-list li:last-child {
+    position: relative;
+}
+
 #hidden-search-box {
     display: none;
+    position: absolute;
+    top: 21px;
+    left: auto;
+    right: 0px;
+    width: 250px;
+    height: 100%;
 }
 
-form > input {
-    max-width: 250px;
+#hidden-search-box > input {
     width: 100%;
-    padding: 10px 15px;
-}
-
-form > button {
-    padding: 10px 15px;
+    padding: 5px 10px;
+    border: 1px solid var(--blue);
 }
 
 .external-small {
@@ -296,13 +299,16 @@ body._pc .menu__list > li:hover .menu__sub-list{
     transform: translate(0px, 0px);
     pointer-events: all;
 }
+
 body._touch .menu__list > li{
     display: flex;
     align-items: center;
 }
+
 body._touch .menu__link{
     flex: 1 1 auto;
 }
+
 body._touch .menu__arrow{
     display: block;
     width: 0px;
@@ -313,12 +319,14 @@ body._touch .menu__arrow{
     border-top: 10px solid var(--black);
     transition: all 0.3s ease 0s;
 }
+
 body._touch .menu__list > li._active .menu__sub-list{
     opacity: 1;
     visibility: visible;
     transform: translate(0px, 0px);
     pointer-events: all;
 }
+
 body._touch .menu__list > li._active .menu__arrow{
     transform: rotate(-180deg);
 }
@@ -330,9 +338,11 @@ body._touch .menu__list > li._active .menu__arrow{
         display: flex;
         align-items: center;
     }
+
     .menu__list > li{
         padding: 10px 0px;
     }
+
     .menu__sub-list{
         transform: translate(0px, 10%);
         opacity: 0;
@@ -344,6 +354,7 @@ body._touch .menu__list > li._active .menu__arrow{
     .search__link_small {
         display: none;
     }
+
 }
 
 @media (max-width: 767px) {
@@ -387,6 +398,7 @@ body._touch .menu__list > li._active .menu__arrow{
         height: 18px;
         cursor: pointer;
     }
+
     .menu__icon span,
     .menu__icon::before,
     .menu__icon::after{
@@ -397,13 +409,16 @@ body._touch .menu__list > li._active .menu__arrow{
         transition: all 0.3s ease 0s;
         background-color: var(--white);
     }
+
     .menu__icon::before,
     .menu__icon::after{
         content: '';
     }
+
     .menu__icon::before{
         top: 0px;
     }
+
     .menu__icon::after{
         bottom: 0px;
     }
@@ -416,14 +431,17 @@ body._touch .menu__list > li._active .menu__arrow{
     .menu__icon._active span{
         transform: scale(0) translate(0px, -50%);
     }
+
     .menu__icon._active::before{
         top: 50%;
         transform: rotate(-45deg) translate(0px, -50%);
     }
+
     .menu__icon._active::after{
         bottom: 50%;
         transform: rotate(45deg) translate(0px, 50%);
     }
+
     .menu__body{
         position: fixed;
         top: 0px;
@@ -435,9 +453,11 @@ body._touch .menu__list > li._active .menu__arrow{
         transition: left 0.3s ease 0s;
         overflow: auto;
     }
+
     .menu__body._active{
         left: 0%;
     }
+
     .menu__body::before{
         content: '';
         position: fixed;
@@ -448,6 +468,7 @@ body._touch .menu__list > li._active .menu__arrow{
         background-color: var(--blue);
         z-index: 2;
     }
+
     .menu__list > li{
         margin: 0px 0px 30px 0px;
         flex-wrap: wrap;
@@ -461,6 +482,7 @@ body._touch .menu__list > li._active .menu__arrow{
         font-size: 18px;
         color: var(--white);
     }
+    
     .menu__sub-list{
         position: relative;
         background-color: var(--orange);
