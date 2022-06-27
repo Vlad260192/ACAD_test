@@ -51,16 +51,16 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="search__link">
-                                    <i class="fas fa-search fa-1x" style="color: #ffffff;"></i>
+                                <a class="search-btn" id="show-search-box">
+                                    <i class="fas fab fa-search fa-1x" style="color: grey;"></i>
                                 </a>
-                                <div class="search__form">
-                                    <form action="#">
-                                        <label for="site-search"></label>
-                                        <input type="search" id="site-search">
-                                        <button class="search-btn" type="submit">Search</button>
-                                    </form>
-                                </div>
+                                <form id="hidden-search-box" action="#" role="search">
+                                    <div>
+                                        <label for="siteSearch"></label>
+                                        <input id="siteSearch" type="text" placeholder="Search...">
+                                        <button type="submit">Submit</button>
+                                    </div>
+                                </form>
                             </li>
                         </ul>
                     </div>

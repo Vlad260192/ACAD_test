@@ -74,3 +74,11 @@ if (menuLinks.length > 0) {
     }
 }
 // -------------
+
+
+// Search-form
+$('#show-search-box').click(function(){
+    $("#hidden-search-box").toggle();
+  });
+
+  // ---------

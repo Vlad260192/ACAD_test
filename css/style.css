@@ -268,8 +268,18 @@ body._lock{
     font-family: "fontawesome" !important;
 }
 
-.search__link {
+#hidden-search-box {
+    display: none;
+}
 
+form > input {
+    max-width: 250px;
+    width: 100%;
+    padding: 10px 15px;
+}
+
+form > button {
+    padding: 10px 15px;
 }
 
 .external-small {
